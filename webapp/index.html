@@ -2,21 +2,34 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>UI5 TypeScript Hello World App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Side Navigation</title>
+
 	<script id="sap-ui-bootstrap"
-	        src="resources/sap-ui-core.js"
-	        data-sap-ui-resourceroots='{
-	            "ui5.typescript.helloworld": "./"
-	        }'
-	        data-sap-ui-theme="sap_horizon"
-	        data-sap-ui-compatVersion="edge"
-	        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
-	        data-sap-ui-async="true"
-	        data-sap-ui-xx-waitForTheme="true"
-	        data-sap-ui-xx-supportedLanguages="en,de"
-	></script>
+		src="resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_horizon"
+		data-sap-ui-resourceroots='{
+			"sap.tnt.sample.SideNavigation": "./",
+			"sap.ui.demo.mock": "mockdata"
+		}'
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-frameOptions="trusted"
+		data-sap-ui-oninit="module:sap/ui/core/ComponentSupport">
+	</script>
+
+	<style>
+		html, body { height: 100%; }
+	</style>
 </head>
-<body class="sapUiBody">
-	<div data-sap-ui-component data-name="ui5.typescript.helloworld" data-id="container" data-settings='{"id" : "ui5.typescript.helloworld"}'></div>
+
+<body class="sapUiBody sapUiSizeCozy" id="content">
+	<div data-sap-ui-component
+		data-name="sap.tnt.sample.SideNavigation"
+		data-height="100%"
+		data-id="container"
+		data-settings='{"id" : "sap.tnt.sample.SideNavigation"}'
+		style="height: 100%">
+	</div>
 </body>
 </html>

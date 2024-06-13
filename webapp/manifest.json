@@ -1,65 +1,32 @@
 {
-	"_version": "1.12.0",
-
 	"sap.app": {
-		"id": "ui5.typescript.helloworld",
-		"type": "application",
-		"i18n": "i18n/i18n.properties",
-		"title": "UI5 TypeScript Hello World",
-		"description": "UI5 TypeScript Hello World",
+		"id": "sap.tnt.sample.SideNavigation",
 		"applicationVersion": {
 			"version": "1.0.0"
-		},
-		"ach": "set-ach"
-	},
-
-	"sap.fiori": {
-
-	},
-
-	"sap.ui": {
-		"technology": "UI5",
-		"icons": {
-
-		},
-		"deviceTypes": {
-			"desktop": true,
-			"tablet": true,
-			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "ui5.typescript.helloworld.view.App",
+			"viewName": "sap.tnt.sample.SideNavigation.V",
 			"type": "XML",
-			"async": true,
-			"id": "app"
+			"async": true
 		},
-
 		"dependencies": {
-			"minUI5Version": "1.104.0",
 			"libs": {
 				"sap.ui.core": {},
-				"sap.ui.layout": {},
-				"sap.ui.unified": {},
+				"sap.tnt": {},
 				"sap.m": {}
 			}
 		},
-
-		"handleValidation": true,
-
-		"contentDensities": {
-			"compact": true,
-			"cozy": true
-		},
-
-		"models": {
-
-		},
-
-		"routing": {
-			
+		"config": {
+			"sample": {
+				"stretch": true,
+				"files": [
+					"V.view.xml",
+					"C.controller.js",
+					"manifest.json"
+				]
+			}
 		}
 	}
 }
